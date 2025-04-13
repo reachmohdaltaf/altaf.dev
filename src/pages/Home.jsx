@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { blogs } from "./content.js";
+import { techBlogs, projects } from "./content.js";
 import { Link } from "react-router-dom";
+import { Card, CardContent, CardHeader } from "@/components/ui/card.jsx";
 
 const Home = () => {
   return (
@@ -70,8 +72,8 @@ const Home = () => {
           <p className="mt-2 text-[16px]">Guides, references, and tutorials.</p>
         </div>
         <div className="mt-8 flex flex-col gap-4">
-          {blogs.slice(0, 3).map((blog, index) => (
-            <Link key={blog.id} to={`/blog/${blog.slug}`}>
+          {techBlogs.slice(0, 3).map((blog, index) => (
+            <Link key={blog.id} to={`/tech/${blog.slug}`}>
               <div className="hover:bg-[#252630] px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">
                 <p className="flex items-center mt-4 gap-2">
                   {index === 0 && (
@@ -89,6 +91,43 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <section className="projects md:px-4 py-6">
+  <div>
+    <h3 className="text-[32px] text-accent font-semibold mb-6">Projects</h3>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {projects.map((project) => (
+        <Card key={project.id}>
+          <CardContent>
+            <div className="flex flex-col gap-1">
+              <p className="text-sm">{project.year}</p>
+              <Link
+                to={project.articleLink}
+                className="text-primary-foreground hover:underline"
+              >
+                {project.title}
+              </Link>
+              <p className="card description">{project.description}</p>
+            </div>
+            <div className="flex gap-4 mt-4">
+              <Link to={project.articleLink}>
+                <Button size="sm" variant="secondary">
+                  Article
+                </Button>
+              </Link>
+              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                <Button size="sm" variant="secondary">
+                  Demo
+                </Button>
+              </a>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
