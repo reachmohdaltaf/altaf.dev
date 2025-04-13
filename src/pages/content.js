@@ -147,96 +147,120 @@ Once you get used to these, working with Git becomes second nature. Version cont
 
 // data/projects.js
 export const projects = [
-  {
-    id: 'keyboard-accordion',
-    year: '2025',
-    title: 'Keyboard Accordion',
-    description: 'Play the accordion online!',
-    articleLink: '/projects/keyboard-accordion',
-    demoLink: 'https://example.com/demo-accordion',
-    article: {
-      overview:
-        'The Keyboard Accordion project is an interactive web application that simulates a musical accordion using keyboard keys. It’s built to provide a fun and educational experience for music enthusiasts.',
-      features: [
-        'Play accordion sounds using your keyboard',
-        'Responsive layout',
-        'Simple and clean UI',
-        'Sound effects mapped to specific keys',
-      ],
-      techStack: ['HTML', 'CSS', 'JavaScript'],
-      challenges:
-        'One of the main challenges was mapping multiple key codes to specific audio files and managing event listeners efficiently.',
-      learnings:
-        'Learned about the Web Audio API and improved understanding of DOM event handling and key events.',
+  [
+    {
+      id: 'Invozo',
+      year: '2025',
+      title: 'Invozo - Bill Maker',
+      description: 'Generate and manage bills effortlessly.',
+      articleLink: '/projects/invozo',
+      demoLink: 'https://example.com/demo-invozo',
+      article: {
+        overview:
+          'Invozo is a simple yet powerful bill-making web app that allows users to generate professional invoices quickly and easily. Designed with small businesses and freelancers in mind, it focuses on speed, clarity, and ease of use.',
+        features: [
+          'Add customer and item details',
+          'Auto-calculate totals and taxes',
+          'Download or print invoices',
+          'Responsive and clean UI',
+        ],
+        techStack: ['HTML', 'CSS', 'JavaScript'],
+        challenges:
+          'Formatting invoice layouts properly across devices and ensuring printable view looked professional.',
+        learnings:
+          'Learned about dynamic DOM manipulation, handling form data, and improving UX for generating PDF/print-friendly layouts.',
+      },
     },
-  },
-  {
-    id: 'expense-tracker',
-    year: '2025',
-    title: 'Expense Tracker',
-    description: 'Track your expenses easily.',
-    articleLink: '/projects/expense-tracker',
-    demoLink: 'https://example.com/demo-expense',
-    article: {
-      overview:
-        'The Expense Tracker helps users keep track of their daily income and expenses with a clean and simple UI.',
-      features: [
-        'Add and delete transactions',
-        'Calculate balance in real-time',
-        'Persistent storage using localStorage',
-      ],
-      techStack: ['React', 'Tailwind CSS'],
-      challenges:
-        'Managing state updates dynamically and syncing localStorage with changes.',
-      learnings:
-        'Practiced React hooks and got better at conditional rendering and managing localStorage.',
+    {
+      id: 'expense-tracker',
+      year: '2025',
+      title: 'Expense Tracker',
+      description: 'Track your budget and expenses easily.',
+      articleLink: '/projects/expense-tracker',
+      demoLink: 'https://example.com/demo-expense',
+      article: {
+        overview:
+          'The Expense Tracker is a budget management tool that helps users monitor income and spending habits. It’s designed for personal finance tracking with real-time balance updates.',
+        features: [
+          'Add and delete income/expenses',
+          'Real-time balance calculation',
+          'Stores data using localStorage',
+        ],
+        techStack: ['React', 'Tailwind CSS'],
+        challenges:
+          'Handling dynamic state updates and syncing data between components and localStorage.',
+        learnings:
+          'Improved skills in React state management, hooks, and localStorage integration.',
+      },
     },
-  },
-  {
-    id: 'expense-tracker',
-    year: '2025',
-    title: 'Expense Tracker',
-    description: 'Track your expenses easily.',
-    articleLink: '/projects/expense-tracker',
-    demoLink: 'https://example.com/demo-expense',
-    article: {
-      overview:
-        'The Expense Tracker helps users keep track of their daily income and expenses with a clean and simple UI.',
-      features: [
-        'Add and delete transactions',
-        'Calculate balance in real-time',
-        'Persistent storage using localStorage',
-      ],
-      techStack: ['React', 'Tailwind CSS'],
-      challenges:
-        'Managing state updates dynamically and syncing localStorage with changes.',
-      learnings:
-        'Practiced React hooks and got better at conditional rendering and managing localStorage.',
+    {
+      id: 'Connectify',
+      year: '2025',
+      title: 'Connectify - Social App',
+      description: 'A simple social media platform.',
+      articleLink: '/projects/connectify',
+      demoLink: 'https://example.com/demo-connectify',
+      article: {
+        overview:
+          'Connectify is a basic social media platform that allows users to post updates, like posts, and interact with others. It aims to provide a clean and minimal social experience.',
+        features: [
+          'Post and delete updates',
+          'Like and comment features',
+          'User profile section',
+        ],
+        techStack: ['React', 'Tailwind CSS', 'Firebase'],
+        challenges:
+          'Managing real-time updates and user authentication.',
+        learnings:
+          'Got hands-on experience with Firebase authentication, Firestore, and React component architecture.',
+      },
     },
-  },
-  {
-    id: 'expense-tracker',
-    year: '2025',
-    title: 'Expense Tracker',
-    description: 'Track your expenses easily.',
-    articleLink: '/projects/expense-tracker',
-    demoLink: 'https://example.com/demo-expense',
-    article: {
-      overview:
-        'The Expense Tracker helps users keep track of their daily income and expenses with a clean and simple UI.',
-      features: [
-        'Add and delete transactions',
-        'Calculate balance in real-time',
-        'Persistent storage using localStorage',
-      ],
-      techStack: ['React', 'Tailwind CSS'],
-      challenges:
-        'Managing state updates dynamically and syncing localStorage with changes.',
-      learnings:
-        'Practiced React hooks and got better at conditional rendering and managing localStorage.',
+    {
+      id: 'Chatify',
+      year: '2025',
+      title: 'Chatify - Realtime Chat App',
+      description: 'Chat with friends in real-time.',
+      articleLink: '/projects/chatify',
+      demoLink: 'https://example.com/demo-chatify',
+      article: {
+        overview:
+          'Chatify is a real-time chat application where users can join chat rooms and message instantly. It’s built to demonstrate real-time communication using web sockets.',
+        features: [
+          'Join public or private chat rooms',
+          'Real-time message updates',
+          'User join/leave notifications',
+        ],
+        techStack: ['React', 'Socket.io', 'Node.js', 'Express'],
+        challenges:
+          'Handling socket events efficiently and ensuring messages stay in sync across all clients.',
+        learnings:
+          'Deepened understanding of WebSocket connections, Express routes, and frontend-backend communication.',
+      },
     },
-  },
-];
+    {
+      id: 'Remote Jobs Platform',
+      year: '2025',
+      title: 'Remote Jobs Platform',
+      description: 'Find and post remote job opportunities.',
+      articleLink: '/projects/remote-jobs-platform',
+      demoLink: 'https://example.com/demo-remotejobs',
+      article: {
+        overview:
+          'A platform for users to find and post remote job listings. It includes features for filtering jobs by categories, applying online, and managing job posts.',
+        features: [
+          'Post and view jobs',
+          'Filter by category and location',
+          'Job details and apply option',
+        ],
+        techStack: ['Next.js', 'Tailwind CSS', 'MongoDB'],
+        challenges:
+          'Creating a scalable job filtering system and managing user submissions securely.',
+        learnings:
+          'Enhanced understanding of Next.js routing, MongoDB schema design, and building full-stack applications.',
+      },
+    }
+  ];
+  
 
 
 

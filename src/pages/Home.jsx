@@ -5,6 +5,56 @@ import { techBlogs, projects } from "./content.js";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "@/components/ui/card.jsx";
 
+
+const deepDiveGroup1 = [
+  {
+    img: '/javascript.webp',
+    title: 'Mastering JavaScript: A Comprehensive Guide',
+    slug: 'mastering-javascript-comprehensive-guide',
+  },
+  {
+    img: '/react.webp',
+    title: 'Building Scalable React Applications',
+    slug: 'building-scalable-react-applications',
+  },
+  {
+    img: '/nodejs.webp',
+    title: 'Getting Started with Node.js',
+    slug: 'getting-started-with-nodejs',
+  },
+  {
+    img: '/webdev.webp',
+    title: 'The Future of Web Development in 2025',
+    slug: 'the-future-of-web-development-2025',
+  },
+  {
+    img: '/htmlcss.webp',
+    title: 'HTML & CSS: Best Practices for Beginners',
+    slug: 'html-css-best-practices-for-beginners',
+  },
+  {
+    img: '/typescript.webp',
+    title: 'TypeScript for JavaScript Developers',
+    slug: 'typescript-for-javascript-developers',
+  },
+  {
+    img: '/typescript.webp',
+    title: 'TypeScript for JavaScript Developers',
+    slug: 'typescript-for-javascript-developers',
+  },
+  {
+    img: '/typescript.webp',
+    title: 'TypeScript for JavaScript Developers',
+    slug: 'typescript-for-javascript-developers',
+  },
+  
+];
+
+
+
+
+
+
 const Home = () => {
   return (
     <div className="text-foreground flex flex-col justify-center px-1 md:px-32">
@@ -91,43 +141,74 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* Deep Dives Section */}
+      <section className="mt-10">
+        <h1 className="text-[32px] text-accent font-semibold">Deep Dives</h1>
+        <p className="mt-2 text-[16px]">In-depth articles and explorations.</p>
+        <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+            {deepDiveGroup1.map((blog, index) => (
+              <Link key={blog.id} to={`/deep-dive/${blog.slug}`}>
+                <div className="hover:bg-[#252630] px-3 flex flex-col justify-center shadow-sm rounded-md bg-secondary border border-gray-700 cursor-pointer">
+                  <p className="flex items-center mt-4 gap-2">
+                    
+                    <span className="text-primary-foreground font-semibold flex gap-3 justify-center items-center text-[16px]">
+                      <img src={blog.img} className="h-8" alt="" />{blog.title}
+                    </span>
+                  </p>
+                  <p className="mb-4">{blog.date}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+
       <section className="projects md:px-4 py-6">
-  <div>
-    <h3 className="text-[32px] text-accent font-semibold mb-6">Projects</h3>
+        <div>
+          <h3 className="text-[32px] text-accent font-semibold mb-6">
+            Projects
+          </h3>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {projects.map((project) => (
-        <Card key={project.id}>
-          <CardContent>
-            <div className="flex flex-col gap-1">
-              <p className="text-sm">{project.year}</p>
-              <Link
-                to={project.articleLink}
-                className="text-primary-foreground hover:underline"
-              >
-                {project.title}
-              </Link>
-              <p className="card description">{project.description}</p>
-            </div>
-            <div className="flex gap-4 mt-4">
-              <Link to={project.articleLink}>
-                <Button size="sm" variant="secondary">
-                  Article
-                </Button>
-              </Link>
-              <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                <Button size="sm" variant="secondary">
-                  Demo
-                </Button>
-              </a>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {projects.map((project) => (
+              <Card key={project.id}>
+                <CardContent>
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm">{project.year}</p>
+                    <Link
+                      to={project.articleLink}
+                      className="text-primary-foreground font-semibold hover:underline"
+                    >
+                      {project.title}
+                    </Link>
+                    <p className="card description">{project.description}</p>
+                  </div>
+                  <div className="flex gap-4 mt-4">
+                    <Link to={project.articleLink}>
+                      <Button size="sm" variant="secondary">
+                        Article
+                      </Button>
+                    </Link>
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button size="sm" variant="secondary">
+                        Demo
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

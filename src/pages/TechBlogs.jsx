@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { techBlogs } from './content.js';
 
@@ -13,6 +13,9 @@ const TechBlogs = () => {
       </div>
     );
   }
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [slug]);
 
   return (
     <div className="text-accent px-6 md:px-32 py-16 max-w-5xl mx-auto">
