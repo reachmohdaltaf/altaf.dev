@@ -67,15 +67,15 @@ const Navbar = () => {
      </div>
       </div>
       {isOpen && (
-  <div className="absolute top-16 items-center w-full bg-secondary h-screen p-4 rounded-md shadow-lg flex flex-col gap-4">
+  <div className="absolute top-16  items-center w-full bg-secondary h-screen p-4 rounded-md shadow-lg flex flex-col gap-4">
     {navButtons.map((btn, index) => (
       <Button
       size={"xl"}
         key={index}
-        className="flex lg:hodden text-accent bg-transparent items-center gap-2 justify-start"
+        className="flex  text-accent bg-transparent w-44 mt-8 items-center gap-2 justify-start"
       >
-        <img src={btn.icon} className="h-4" alt={btn.label} />
-        <span className="text-[16px]">{btn.label}</span>
+        <img src={btn.icon} className="h-10" alt={btn.label} />
+        <span className="text-[18px]">{btn.label}</span>
       </Button>
     ))}
   </div>

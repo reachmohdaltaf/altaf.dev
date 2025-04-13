@@ -8,8 +8,8 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card.jsx";
 
 const deepDiveGroup1 = [
   {
-    img: '/javascript.webp',
-    title: 'Mastering JavaScript: A Comprehensive Guide',
+    img: '/graphql.webp',
+    title: 'Mastering JavaScript',
     slug: 'mastering-javascript-comprehensive-guide',
   },
   {
@@ -18,32 +18,32 @@ const deepDiveGroup1 = [
     slug: 'building-scalable-react-applications',
   },
   {
-    img: '/nodejs.webp',
+    img: '/js.webp',
     title: 'Getting Started with Node.js',
     slug: 'getting-started-with-nodejs',
   },
   {
-    img: '/webdev.webp',
+    img: '/redux.webp',
     title: 'The Future of Web Development in 2025',
     slug: 'the-future-of-web-development-2025',
   },
   {
-    img: '/htmlcss.webp',
+    img: '/redux.webp',
     title: 'HTML & CSS: Best Practices for Beginners',
     slug: 'html-css-best-practices-for-beginners',
   },
   {
-    img: '/typescript.webp',
+    img: '/redux.webp',
     title: 'TypeScript for JavaScript Developers',
     slug: 'typescript-for-javascript-developers',
   },
   {
-    img: '/typescript.webp',
+    img: '/redux.webp',
     title: 'TypeScript for JavaScript Developers',
     slug: 'typescript-for-javascript-developers',
   },
   {
-    img: '/typescript.webp',
+    img: '/redux.webp',
     title: 'TypeScript for JavaScript Developers',
     slug: 'typescript-for-javascript-developers',
   },
@@ -153,7 +153,7 @@ const Home = () => {
                 <div className="hover:bg-[#252630] px-3 flex flex-col justify-center shadow-sm rounded-md bg-secondary border border-gray-700 cursor-pointer">
                   <p className="flex items-center mt-4 gap-2">
                     
-                    <span className="text-primary-foreground font-semibold flex gap-3 justify-center items-center text-[16px]">
+                    <span className="text-acccent font-semibold flex gap-3 justify-center items-center text-[16px]">
                       <img src={blog.img} className="h-8" alt="" />{blog.title}
                     </span>
                   </p>
