@@ -4,51 +4,9 @@ import { blogs } from "./content.js";
 import { techBlogs, projects } from "./content.js";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "@/components/ui/card.jsx";
+import { deepDiveGroup1 } from "./content.js";
 
 
-const deepDiveGroup1 = [
-  {
-    img: '/graphql.webp',
-    title: 'Mastering JavaScript',
-    slug: 'mastering-javascript-comprehensive-guide',
-  },
-  {
-    img: '/react.webp',
-    title: 'Building Scalable React Applications',
-    slug: 'building-scalable-react-applications',
-  },
-  {
-    img: '/js.webp',
-    title: 'Getting Started with Node.js',
-    slug: 'getting-started-with-nodejs',
-  },
-  {
-    img: 'https://www.taniarascia.com/static/cb5559b72715b61014d79b2e4b990402/964d6/apple.webp',
-    title: 'The Future of Web Development in 2025',
-    slug: 'the-future-of-web-development-2025',
-  },
-  {
-    img: 'https://www.taniarascia.com/static/cf23526f451784ff137f161b8fe18d5a/964d6/vue.webp',
-    title: 'HTML & CSS: Best Practices for Beginners',
-    slug: 'html-css-best-practices-for-beginners',
-  },
-  {
-    img: 'https://www.taniarascia.com/static/2260b97f40967d9ee6392e12239375b1/964d6/css-new.webp',
-    title: 'TypeScript for JavaScript Developers',
-    slug: 'typescript-for-javascript-developers',
-  },
-  {
-    img: 'https://www.taniarascia.com/static/fc5baca5976a4d970ad8480236797271/964d6/terminal.webp',
-    title: 'TypeScript for JavaScript Developers',
-    slug: 'typescript-for-javascript-developers',
-  },
-  {
-    img: '/redux.webp',
-    title: 'TypeScript for JavaScript Developers',
-    slug: 'typescript-for-javascript-developers',
-  },
-  
-];
 
 
 
@@ -168,7 +126,7 @@ const Home = () => {
 
 
 
-      <section className="projects md:px-4 py-6">
+      <section className="projects  py-6">
         <div>
           <h3 className="text-[32px] text-accent font-semibold mb-6">
             Projects

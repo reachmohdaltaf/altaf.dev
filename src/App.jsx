@@ -7,6 +7,7 @@ import TechBlogs from './pages/TechBlogs'
 import ProjectArticle from './pages/ProjectArticle'
 import Aboutme from './pages/Aboutme'
 import NewsLetter from './pages/NewsLetter'
+import DeepDiveBlog from './pages/DeepDiveBlog'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/newsletter" element={<NewsLetter />} />
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/tech/:slug" element={<TechBlogs />} />
+          <Route path="/deep-dive/:slug" element={<DeepDiveBlog />} />
           <Route path="/projects/:id" element={<ProjectArticle />} />
         </Route>
       </Routes>
