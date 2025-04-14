@@ -41,7 +41,7 @@ const Navbar = () => {
         {navButtons.map((btn, index) => (
          <Link to={btn.link} key={index}> <Button
             key={index}
-            className="md:flex text-accent hidden bg-transparent items-center justify-center gap-1"
+            className="md:flex text-accent hidden shadow-none bg-transparent items-center justify-center gap-1"
           >
             <img src={btn.icon} className="h-4" alt={btn.label} />
             <span className="text-[16px]">{btn.label}</span>

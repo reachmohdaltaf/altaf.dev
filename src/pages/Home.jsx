@@ -56,7 +56,7 @@ const Home = () => {
         <div className="mt-8 flex flex-col gap-4">
           {blogs.slice(0, 3).map((blog, index) => (
             <Link key={blog.id} to={`/blog/${blog.slug}`}>
-              <div className="hover:bg-[#252630] hover:text-accent px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">
+              <div className="hover:bg-muted hover:text-accent px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">
                 <p className="flex items-center mt-4 gap-2">
                   {index === 0 && (
                     <Button variant={"secondary"} className="h-4 text-xs">
@@ -83,7 +83,7 @@ const Home = () => {
         <div className="mt-8 flex flex-col gap-4">
           {techBlogs.slice(0, 3).map((blog, index) => (
             <Link key={blog.id} to={`/tech/${blog.slug}`}>
-              <div className="hover:bg-[#252630] px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">
+              <div className="hover:bg-muted px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">
                 <p className="flex items-center mt-4 gap-2">
                   {index === 0 && (
                     <Button variant={"secondary"} className="h-4 text-xs">
@@ -109,7 +109,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
             {deepDiveGroup1.map((blog, index) => (
               <Link key={blog.id} to={`/deep-dive/${blog.slug}`}>
-                <div className="hover:bg-[#252630] px-3 flex flex-col justify-center shadow-sm rounded-md bg-secondary border border-gray-700 cursor-pointer">
+                <div className="hover:bg-muted px-3 flex flex-col justify-center shadow-sm rounded-md bg-secondary border border-gray-700 cursor-pointer">
                   <p className="flex items-center mt-4 gap-2">
                     
                     <span className="text-acccent font-semibold h-14 flex gap-3 justify-center items-center text-[16px]">
