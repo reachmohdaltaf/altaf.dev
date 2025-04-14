@@ -275,25 +275,25 @@ export const deepDiveGroup1 = [
     content: `React is a popular library for building user interfaces. Learn how to scale your React apps with patterns like component splitting, lazy loading, and React Query.`
   },
   {
-    img: '/js.webp',
+    img: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-3030179.png?f=webp&w=256',
     title: 'Getting Started with Node.js',
     slug: 'getting-started-with-nodejs',
     content: `Node.js allows you to run JavaScript on the server. This article walks you through setting up your first Node.js server using Express and connecting it to a database.`
   },
   {
-    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
+    img: 'https://www.taniarascia.com/static/fc5baca5976a4d970ad8480236797271/964d6/terminal.webp',
     title: 'TypeScript for Beginners',
     slug: 'typescript-for-beginners',
     content: `TypeScript brings static typing to JavaScript. This beginner-friendly guide introduces interfaces, types, and how to integrate TypeScript into your existing JS projects.`
   },
   {
-    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
+    img: 'https://icon.icepanel.io/Technology/png-shadow-512/Next.js.png',
     title: 'Exploring Next.js Fundamentals',
     slug: 'exploring-nextjs-fundamentals',
     content: `Next.js is a React framework for building full-stack apps. Discover how to set up pages, API routes, and optimize performance using SSR and static site generation.`
   },
   {
-    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITHn_TgjDyhdWvePNw0mveDrTUr00GLfv_Q&s',
     title: 'Introduction to MongoDB',
     slug: 'introduction-to-mongodb',
     content: `MongoDB is a NoSQL database perfect for modern web apps. Learn how to structure documents, perform CRUD operations, and connect MongoDB with Node.js.`
