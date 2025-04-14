@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Blog from './pages/Blog'
 import TechBlogs from './pages/TechBlogs'
 import ProjectArticle from './pages/ProjectArticle'
+import Aboutme from './pages/Aboutme'
+import NewsLetter from './pages/NewsLetter'
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/me" element={<Aboutme />} />
+          <Route path="/newsletter" element={<NewsLetter />} />
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/tech/:slug" element={<TechBlogs />} />
           <Route path="/projects/:id" element={<ProjectArticle />} />

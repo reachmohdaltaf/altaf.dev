@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { AlignJustify, Github, Moon, Sun, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [theme, setTheme] = useState("light");
   const navButtons = [
-    { icon: "/notes.png", label: "Notes" },
-    { icon: "/blog.png", label: "Blog" },
-    { icon: "/projects.png", label: "Projects" },
-    { icon: "/logo.png", label: "About" },
+    { icon: "/notes.png", label: "Notes", link:"/notes" },
+    { icon: "/blog.png", label: "Blog", link:"/blog" },
+    { icon: "/projects.png", label: "Projects", link:"/projects" },
+    { icon: "/logo.png", label: "About", link:"/me" },
   ];
 
     const handleclick = () => {
@@ -34,17 +35,17 @@ const Navbar = () => {
 <div className="borderb w-full md:h-16 h-16 md:p-0 px-2  flex items-center justify-between bg-transparent relative">
      <div className="logo  flex items-center gap-2 text-accent">
         <img src="/logo.png" className="h-6 w-6" alt="Logo" />
-        <h1 className="font-semibold text-[17px] lg:text-[16px] hover:underline underline-offset-4 cursor-pointer ">altaf.dev</h1>
+        <Link to={'/'} className="font-semibold text-[17px] lg:text-[16px] hover:underline underline-offset-4 cursor-pointer ">altaf.dev</Link>
       </div>
       <div className="buttons  flex gap-3">
         {navButtons.map((btn, index) => (
-          <Button
+         <Link to={btn.link} key={index}> <Button
             key={index}
             className="md:flex text-accent hidden bg-transparent items-center justify-center gap-1"
           >
             <img src={btn.icon} className="h-4" alt={btn.label} />
             <span className="text-[16px]">{btn.label}</span>
-          </Button>
+          </Button></Link>
         ))}
         <div className="items-center justify-center flex gap-1">
         <Button onClick={handleclick} className="text-xl px-0 flex md:hidden hover:text-accent">

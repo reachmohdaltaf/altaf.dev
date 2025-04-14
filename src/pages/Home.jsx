@@ -23,22 +23,22 @@ const deepDiveGroup1 = [
     slug: 'getting-started-with-nodejs',
   },
   {
-    img: '/redux.webp',
+    img: 'https://www.taniarascia.com/static/cb5559b72715b61014d79b2e4b990402/964d6/apple.webp',
     title: 'The Future of Web Development in 2025',
     slug: 'the-future-of-web-development-2025',
   },
   {
-    img: '/redux.webp',
+    img: 'https://www.taniarascia.com/static/cf23526f451784ff137f161b8fe18d5a/964d6/vue.webp',
     title: 'HTML & CSS: Best Practices for Beginners',
     slug: 'html-css-best-practices-for-beginners',
   },
   {
-    img: '/redux.webp',
+    img: 'https://www.taniarascia.com/static/2260b97f40967d9ee6392e12239375b1/964d6/css-new.webp',
     title: 'TypeScript for JavaScript Developers',
     slug: 'typescript-for-javascript-developers',
   },
   {
-    img: '/redux.webp',
+    img: 'https://www.taniarascia.com/static/fc5baca5976a4d970ad8480236797271/964d6/terminal.webp',
     title: 'TypeScript for JavaScript Developers',
     slug: 'typescript-for-javascript-developers',
   },
@@ -57,7 +57,7 @@ const deepDiveGroup1 = [
 
 const Home = () => {
   return (
-    <div className="text-foreground flex flex-col justify-center px-1 md:px-32">
+    <div className="text-foreground flex flex-col justify-center px-1 ">
       {/* Hero Section */}
       <section className=" flex items-center">
         <div>
@@ -73,16 +73,17 @@ const Home = () => {
             with my family and friends.
           </p>
           <div className="mt-8 gap-4 flex">
-            <Button size={"xl"} variant={"secondary"}>
+            <Link to={'/me'}><Button size={"xl"} variant={"secondary"}>
               About me
-            </Button>
-            <Button size={"xl"} variant={"secondary"}>
+            </Button></Link>
+           <Link to={'/newsletter'}> <Button size={"xl"} variant={"secondary"}>
               Newsletter
-            </Button>
+            </Button> 
+            </Link>
           </div>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div className="hidden md:flex items-center justify-center w-full h-full">
+          <img src="/turtle.png" className="md:h-52  h-44 lg:h-60" alt="" />
         </div>
       </section>
 
@@ -153,7 +154,7 @@ const Home = () => {
                 <div className="hover:bg-[#252630] px-3 flex flex-col justify-center shadow-sm rounded-md bg-secondary border border-gray-700 cursor-pointer">
                   <p className="flex items-center mt-4 gap-2">
                     
-                    <span className="text-acccent font-semibold flex gap-3 justify-center items-center text-[16px]">
+                    <span className="text-acccent font-semibold h-14 flex gap-3 justify-center items-center text-[16px]">
                       <img src={blog.img} className="h-8" alt="" />{blog.title}
                     </span>
                   </p>
