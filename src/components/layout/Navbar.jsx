@@ -47,24 +47,36 @@ const Navbar = () => {
             <span className="text-[16px]">{btn.label}</span>
           </Button></Link>
         ))}
-        <div className="items-center justify-center flex gap-1">
-        <Button onClick={handleclick} className="text-xl px-0 flex md:hidden hover:text-accent">
-           {isOpen? <X size={24} className="text-foreground !size-auto" /> : <AlignJustify size={24} className="text-foreground !size-auto" />}
-          </Button>
-          <Button onClick={handleTheme} className="text-xl px-0">
-            {theme === "light" ? (
-                <Sun size={24} className="text-foreground !size-auto" />
-            ) : (
-                <Moon size={24} className="text-foreground !size-auto" />
-            )}
-          </Button>
-          <Button className="text-xl px-0 hover:text-foreground">
-            <img src="/github.svg" className="h-12 invert-75 hover:invert-90" alt="" />
-          </Button>
-          <Button className="text-xl px-0 hover:text-foreground">
-          <img src="/bsky.svg" className="h-12 invert-75 hover:invert-90" alt="" />
-          </Button>
-        </div>
+       <div className="flex items-center justify-center space-x-1">
+  <Button onClick={handleclick} className="text-xl px-0 flex items-center md:hidden hover:text-accent">
+    {isOpen ? (
+      <X size={24} className="text-foreground !size-auto" />
+    ) : (
+      <AlignJustify size={24} className="text-foreground !size-auto" />
+    )}
+  </Button>
+
+  <Button onClick={handleTheme} className="text-xl px-0 flex items-center">
+    {theme === "light" ? (
+      <Sun size={24} className="text-foreground !size-auto" />
+    ) : (
+      <Moon size={24} className="text-foreground !size-auto" />
+    )}
+  </Button>
+
+  <Link to="https://github.com/reachmohdaltaf" target="_blank">
+    <Button className="text-xl px-0 flex items-center hover:text-foreground">
+      <img src="/github.svg" className={`h-12  ${theme === "light" ? "invert-75 hover:invert-90" : "invert-0 hover:invert-40"}`} alt="GitHub" />
+    </Button>
+  </Link>
+
+  <Link to="https://bsky.app/profile/reachmohdaltaf.bsky.social" target="_blank">
+    <Button className="text-xl px-0 flex items-center hover:text-foreground">
+      <img src="/bsky.svg" className={`h-12  ${theme === "light" ? "invert-75 hover:invert-90" : "invert-0 hover:invert-40"}`} alt="Bsky" />
+    </Button>
+  </Link>
+</div>
+
      </div>
       </div>
       {isOpen && (

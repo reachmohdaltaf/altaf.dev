@@ -19,7 +19,7 @@ const Layout = () => {
         </div>
         
         {/* Main content area */}
-        <main className="flex-1 lg:ml-64 max-w-screen-2xl mx-auto md:px-32 p-4 pb-16">
+        <main className="flex-1 lg:ml-64 max-w-screen-2xl mx-auto md:px-38 p-4 pb-16">
           <Outlet />
         </main>
       </div>

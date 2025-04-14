@@ -19,7 +19,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className=" flex items-center">
         <div>
-          <h1 className="text-[35px] text-accent font-bold">Hey, I'm Altaf!</h1>
+          <h1 className="md:text-[2.7rem] text-[2.2rem] text-accent font-bold">Hey, I'm Altaf!</h1>
           <p className="mt-4 text-[17px]">
             I'm a Web Developer, open-source creator, and former professional
             chef. I've been making websites since 2019 and{" "}
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
         <div className="hidden md:flex items-center justify-center w-full h-full">
-          <img src="/turtle.png" className="md:h-52  h-44 lg:h-60" alt="" />
+          <img src="/turtle.png" className="md:h-44  h-44 lg:h-52" alt="" />
         </div>
       </section>
 

@@ -281,31 +281,31 @@ export const deepDiveGroup1 = [
     content: `Node.js allows you to run JavaScript on the server. This article walks you through setting up your first Node.js server using Express and connecting it to a database.`
   },
   {
-    img: '/typescript.webp',
+    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
     title: 'TypeScript for Beginners',
     slug: 'typescript-for-beginners',
     content: `TypeScript brings static typing to JavaScript. This beginner-friendly guide introduces interfaces, types, and how to integrate TypeScript into your existing JS projects.`
   },
   {
-    img: '/nextjs.webp',
+    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
     title: 'Exploring Next.js Fundamentals',
     slug: 'exploring-nextjs-fundamentals',
     content: `Next.js is a React framework for building full-stack apps. Discover how to set up pages, API routes, and optimize performance using SSR and static site generation.`
   },
   {
-    img: '/mongodb.webp',
+    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
     title: 'Introduction to MongoDB',
     slug: 'introduction-to-mongodb',
     content: `MongoDB is a NoSQL database perfect for modern web apps. Learn how to structure documents, perform CRUD operations, and connect MongoDB with Node.js.`
   },
   {
-    img: '/auth.webp',
+    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
     title: 'Authentication in Modern Web Apps',
     slug: 'authentication-in-modern-web-apps',
     content: `Authentication is crucial for any web app. This guide explores common methods like JWT, OAuth, and session-based auth, with examples in Express and React.`
   },
   {
-    img: '/docker.webp',
+    img: 'https://tania.dev/static/07f5a193c5a1357203c0389b1002fb71/964d6/floppylogo.webp',
     title: 'Docker Essentials for Developers',
     slug: 'docker-essentials-for-developers',
     content: `Docker simplifies app deployment by containerizing environments. Learn the basics of Docker, creating Dockerfiles, and using Docker Compose for multi-container apps.`
