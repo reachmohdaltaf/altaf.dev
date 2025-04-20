@@ -12,16 +12,17 @@ const urls = [
 // Initialize SitemapStream
 const sitemapStream = new SitemapStream({ hostname: 'https://altaf-portfolio-omega.vercel.app' });
 
-// Create the sitemap and write to file
+// Create the sitemap and write to file in public folder
 async function generateSitemap() {
-  const writeStream = fs.createWriteStream(path.resolve('dist', 'sitemap.xml'));
+  const publicDir = path.resolve('public', 'sitemap.xml');
+  const writeStream = fs.createWriteStream(publicDir);
 
   sitemapStream.pipe(writeStream);
   urls.forEach(url => sitemapStream.write(url));
   sitemapStream.end();
 
   await streamToPromise(sitemapStream);
-  console.log('Sitemap generated successfully!');
+  console.log('Sitemap generated successfully in the public folder!');
 }
 
 generateSitemap();
