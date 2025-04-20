@@ -176,7 +176,7 @@ export const projects = [
     title: 'Expense Tracker',
     description: 'Track your budget and expenses easily.',
     articleLink: '/projects/expense-tracker',
-    demoLink: 'https://example.com/demo-expense',
+    demoLink: 'https://expenzy-kpsb.vercel.app/',
     article: {
       overview:
         'The Expense Tracker is a budget management tool that helps users monitor income and spending habits. It’s designed for personal finance tracking with real-time balance updates.',
@@ -198,7 +198,7 @@ export const projects = [
     title: 'Connectify - Social App',
     description: 'A simple social media platform.',
     articleLink: '/projects/connectify',
-    demoLink: 'https://example.com/demo-connectify',
+    demoLink: 'https://connectify-h8zy.onrender.com/',
     article: {
       overview:
         'Connectify is a basic social media platform that allows users to post updates, like posts, and interact with others. It aims to provide a clean and minimal social experience.',
@@ -220,7 +220,7 @@ export const projects = [
     title: 'Chatify - Realtime Chat App',
     description: 'Chat with friends in real-time.',
     articleLink: '/projects/chatify',
-    demoLink: 'https://example.com/demo-chatify',
+    demoLink: 'https://realtime-chat-application-6w8u.onrender.com/',
     article: {
       overview:
         'Chatify is a real-time chat application where users can join chat rooms and message instantly. It’s built to demonstrate real-time communication using web sockets.',
@@ -242,7 +242,7 @@ export const projects = [
     title: 'Remote Jobs Platform',
     description: 'Find and post remote job opportunities.',
     articleLink: '/projects/remote-jobs-platform',
-    demoLink: 'https://example.com/demo-remotejobs',
+    demoLink: 'https://remote-jobs-platform.vercel.app/',
     article: {
       overview:
         'A platform for users to find and post remote job listings. It includes features for filtering jobs by categories, applying online, and managing job posts.',
