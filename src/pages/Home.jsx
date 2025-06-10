@@ -21,14 +21,11 @@ const Home = () => {
         <div>
           <h1 className="md:text-[2.7rem] text-[2.2rem] text-accent font-bold">Hey, I'm Altaf!</h1>
           <p className="mt-4 text-[17px]">
-            I'm a Web Developer, open-source creator, and former professional
-            chef. I've been making websites since 2019 and{" "}
+            I'm a MERN Stack Developer with a focus on building full-stack web applications using MongoDB, Express.js, React, and Node.js. I've been working on real-world projects since 2019{" "}
             <span className="text-primary-foreground hover:underline">
-              writing on this blog
+               writing on this blog
             </span>{" "}
-            for the past decade. <br /> <br /> I enjoy weight-lifting, reading
-            sci-fi and fantasy, playing retro video games, and spending time
-            with my family and friends.
+            for the past decade. <br /> <br />  to document my journey and share insights from my development experience. I enjoy exploring new web technologies, optimizing user interfaces, building project architectures, and continuously learning to improve my skills.
           </p>
           <div className="mt-8 gap-4 flex">
             <Link to={'/me'}><Button size={"xl"} variant={"secondary"}>
@@ -48,12 +45,15 @@ const Home = () => {
       {/* Notes Section */}
       <section className="mt-10">
         <div>
-          <h2 className="text-[32px] text-accent font-semibold">Notes</h2>
+          <div className="flex items-center justify-between">
+            <h2 className="text-[32px] text-accent font-semibold">Notes</h2>
+            <Button variant={""} className={'underline'}>See All</Button>
+          </div>
           <p className="mt-2 text-[16px]">
             Personal notes about life, music, projects, and everything else.
           </p>
         </div>
-        <div className="mt-8 flex flex-col gap-4">
+        <div className="mt-8 flex flex-col gap-0">
           {blogs.slice(0, 3).map((blog, index) => (
             <Link key={blog.id} to={`/blog/${blog.slug}`}>
               <div className="hover:bg-muted hover:text-accent px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">
@@ -80,7 +80,7 @@ const Home = () => {
           <h2 className="text-[32px] text-accent font-semibold">Tech Blogs</h2>
           <p className="mt-2 text-[16px]">Guides, references, and tutorials.</p>
         </div>
-        <div className="mt-8 flex flex-col gap-4">
+        <div className="mt-8 flex flex-col gap-0">
           {techBlogs.slice(0, 3).map((blog, index) => (
             <Link key={blog.id} to={`/tech/${blog.slug}`}>
               <div className="hover:bg-muted px-3 flex flex-col justify-center shadow-sm rounded-3xl cursor-pointer">

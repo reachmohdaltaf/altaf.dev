@@ -148,6 +148,29 @@ Once you get used to these, working with Git becomes second nature. Version cont
 // data/projects.js
 export const projects = [
   {
+    id: 'Adowise',
+    year: '2025',
+    title: 'Adowise - Mentorship Platform',
+    description: 'Connect with mentors and mentees easily.',
+    articleLink: '/projects/adowise',
+    demoLink: 'https://adowise.com',
+    article: {
+      overview:
+        'Adowise is a platform that connects mentors with mentees, facilitating knowledge sharing and professional growth.',
+      features: [
+        'User profiles for mentors and mentees',
+        'Messaging system for easy communication',
+        'Resource sharing and collaboration tools',
+        'Feedback and rating system',
+      ],
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
+      challenges:
+        'Ensuring real-time communication and data synchronization between users.',
+      learnings:
+        'Learned about dynamic DOM manipulation, handling form data, and improving UX for generating PDF/print-friendly layouts.',
+    },
+  },
+  {
     id: 'Invozo',
     year: '2025',
     title: 'Invozo - Bill Maker',
