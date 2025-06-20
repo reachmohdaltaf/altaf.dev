@@ -5,6 +5,7 @@ import { techBlogs, projects } from "./content.js";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader } from "@/components/ui/card.jsx";
 import { deepDiveGroup1 } from "./content.js";
+import { Plus } from "lucide-react";
 
 
 
@@ -167,15 +168,12 @@ const Home = () => {
 ))}
  <Card >
     <CardContent>
-      <div className="flex flex-col gap-1">
-        <p className="text-sm"></p>
-        <Link
-          // Update this line to use the project ID
-          className="text-primary-foreground font-semibold hover:underline"
-        >
-          <p>See More</p>
-         
-        </Link>
+      <div className="flex  items-center gap-1">
+
+
+      <Link to={"/projects"} className="text-sm">See More <Plus/></Link>
+
+
       
       </div>
      
