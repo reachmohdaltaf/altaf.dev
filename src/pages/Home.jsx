@@ -165,6 +165,22 @@ const Home = () => {
     </CardContent>
   </Card>
 ))}
+ <Card >
+    <CardContent>
+      <div className="flex flex-col gap-1">
+        <p className="text-sm"></p>
+        <Link
+          // Update this line to use the project ID
+          className="text-primary-foreground font-semibold hover:underline"
+        >
+          <p>See More</p>
+         
+        </Link>
+      
+      </div>
+     
+    </CardContent>
+  </Card>
           </div>
         </div>
       </section>
