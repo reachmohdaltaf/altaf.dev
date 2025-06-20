@@ -2,40 +2,27 @@
 export const blogs = [
   {
     id: 1,
-    title: "Year in Review: 2024 into 2025",
-    slug: "year-in-review-2024-into-2025",
-    date: "March 2025",
-    content: `This is a detailed write-up for Year in Review 2024 into 2025. I explored my personal and professional growth, key milestones, and lessons learned throughout the year.`
+    title: "Building Adowise: From Idea to Execution",
+    slug: "building-adowise",
+    date: "June 2025",
+    content: `Adowise started as a simple idea to bridge students with the right mentors in tech. In this blog, I walk through how I validated the idea, started building it with React and Node.js, and the challenges I’m facing as a solo founder.`
   },
   {
     id: 2,
-    title: "How I transitioned from Chef to Coder",
-    slug: "chef-to-coder",
-    date: "Jan 2025",
-    content: `Story about how I shifted from being a chef to full-time web developer. I talk about my learning journey, challenges, and the similarities between the two worlds.`
+    title: "Behind the Scenes of Adowise Tech Stack",
+    slug: "adowise-tech-stack",
+    date: "June 2025",
+    content: `What powers Adowise under the hood? I break down the tools and frameworks I'm using—MongoDB, Express, React, Node.js, Tailwind—and share why I chose them. I also talk about future plans like scaling, auth, and calendar integration.`
   },
   {
     id: 3,
-    title: "5 Tools I Use Daily as a Developer",
-    slug: "daily-dev-tools",
-    date: "Feb 2025",
-    content: `From VS Code extensions to GitHub integrations, these tools boost my productivity and make my workflow smooth and efficient. Here's a breakdown of my top picks.`
-  },
-  {
-    id: 4,
-    title: "Why I Love Building Side Projects",
-    slug: "building-side-projects",
-    date: "April 2025",
-    content: `Side projects let me explore new tech and solve fun problems without pressure. I share the value they bring to my learning and creativity.`
-  },
-  {
-    id: 5,
-    title: "Lessons from Failing My First Startup",
-    slug: "startup-lessons",
-    date: "May 2025",
-    content: `My first startup didn't take off, but the experience taught me more than any success could have. I talk about mistakes, growth, and what I'll do differently next time.`
+    title: "Lessons I'm Learning While Building My First Real Startup",
+    slug: "adowise-lessons",
+    date: "June 2025",
+    content: `Adowise is my first serious startup attempt. I'm learning how to manage time, handle feedback, write clean code, and build something people want. This blog is a raw and honest reflection of what I'm figuring out every day.`
   }
 ];
+
 
 // data/techBlogs.js
 export const techBlogs = [
