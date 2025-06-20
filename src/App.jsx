@@ -8,7 +8,9 @@ import ProjectArticle from './pages/ProjectArticle'
 import Aboutme from './pages/Aboutme'
 import NewsLetter from './pages/NewsLetter'
 import DeepDiveBlog from './pages/DeepDiveBlog'
-
+import MyBlogs from './pages/MyBlog'
+import Notes from './pages/Notes'
+import Projects from './pages/Projects'
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,6 +23,9 @@ const App = () => {
           <Route path="/tech/:slug" element={<TechBlogs />} />
           <Route path="/deep-dive/:slug" element={<DeepDiveBlog />} />
           <Route path="/projects/:id" element={<ProjectArticle />} />
+          <Route path="/blogs" element={<MyBlogs />} />
+          <Route path="/notes" element={<Notes />} />
+          <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -8,7 +8,7 @@ const Navbar = () => {
     const [theme, setTheme] = useState("light");
   const navButtons = [
     { icon: "/notes.png", label: "Notes", link:"/notes" },
-    { icon: "/blog.png", label: "Blog", link:"/blog" },
+    { icon: "/blog.png", label: "Blog", link:"/blogs" },
     { icon: "/projects.png", label: "Projects", link:"/projects" },
     { icon: "/logo.png", label: "About", link:"/me" },
   ];
