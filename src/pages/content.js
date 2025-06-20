@@ -170,6 +170,51 @@ export const projects = [
         'Learned about dynamic DOM manipulation, handling form data, and improving UX for generating PDF/print-friendly layouts.',
     },
   },
+   {
+    id: 'Remote Jobs Platform',
+    year: '2025',
+    title: 'Remote Jobs Platform',
+    description: 'Find and post remote job opportunities.',
+    articleLink: '/projects/remote-jobs-platform',
+    demoLink: 'https://remote-jobs-platform.vercel.app/',
+    article: {
+      overview:
+        'A platform for users to find and post remote job listings. It includes features for filtering jobs by categories, applying online, and managing job posts.',
+      features: [
+        'Post and view jobs',
+        'Filter by category and location',
+        'Job details and apply option',
+      ],
+      techStack: ['Next.js', 'Tailwind CSS', 'MongoDB'],
+      challenges:
+        'Creating a scalable job filtering system and managing user submissions securely.',
+      learnings:
+        'Enhanced understanding of Next.js routing, MongoDB schema design, and building full-stack applications.',
+    },
+  },
+  {
+    id: 'Wrytit',
+    year: '2025',
+    title: 'Blog Platform - Wrytit',
+    description: 'A platform for sharing and discovering blog posts.',
+    articleLink: '/projects/wrytit',
+    demoLink: 'https://wrytit.vercel.app/',
+    article: {
+      overview:
+        'Wrytit is a platform for sharing and discovering blog posts.',
+      features: [
+        'User profiles for authors and readers',
+        'Commenting system for discussions',
+        'Tagging and categorization of posts',
+        'Bookmarking and saving favorite articles',
+      ],
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
+      challenges:
+        'Ensuring smooth user experience with real-time updates and efficient data fetching.',
+      learnings:
+        'Gained experience in building RESTful APIs, managing user authentication, and optimizing performance for a content-heavy application.',
+    },
+  },
   {
     id: 'Invozo',
     year: '2025',
@@ -193,28 +238,7 @@ export const projects = [
         'Learned about dynamic DOM manipulation, handling form data, and improving UX for generating PDF/print-friendly layouts.',
     },
   },
-  {
-    id: 'expense-tracker',
-    year: '2025',
-    title: 'Expense Tracker',
-    description: 'Track your budget and expenses easily.',
-    articleLink: '/projects/expense-tracker',
-    demoLink: 'https://expenzy-kpsb.vercel.app/',
-    article: {
-      overview:
-        'The Expense Tracker is a budget management tool that helps users monitor income and spending habits. It’s designed for personal finance tracking with real-time balance updates.',
-      features: [
-        'Add and delete income/expenses',
-        'Real-time balance calculation',
-        'Stores data using localStorage',
-      ],
-      techStack: ['React', 'Tailwind CSS'],
-      challenges:
-        'Handling dynamic state updates and syncing data between components and localStorage.',
-      learnings:
-        'Improved skills in React state management, hooks, and localStorage integration.',
-    },
-  },
+
   {
     id: 'Connectify',
     year: '2025',
@@ -259,28 +283,29 @@ export const projects = [
         'Deepened understanding of WebSocket connections, Express routes, and frontend-backend communication.',
     },
   },
-  {
-    id: 'Remote Jobs Platform',
+    {
+    id: 'expense-tracker',
     year: '2025',
-    title: 'Remote Jobs Platform',
-    description: 'Find and post remote job opportunities.',
-    articleLink: '/projects/remote-jobs-platform',
-    demoLink: 'https://remote-jobs-platform.vercel.app/',
+    title: 'Expense Tracker',
+    description: 'Track your budget and expenses easily.',
+    articleLink: '/projects/expense-tracker',
+    demoLink: 'https://expenzy-kpsb.vercel.app/',
     article: {
       overview:
-        'A platform for users to find and post remote job listings. It includes features for filtering jobs by categories, applying online, and managing job posts.',
+        'The Expense Tracker is a budget management tool that helps users monitor income and spending habits. It’s designed for personal finance tracking with real-time balance updates.',
       features: [
-        'Post and view jobs',
-        'Filter by category and location',
-        'Job details and apply option',
+        'Add and delete income/expenses',
+        'Real-time balance calculation',
+        'Stores data using localStorage',
       ],
-      techStack: ['Next.js', 'Tailwind CSS', 'MongoDB'],
+      techStack: ['React', 'Tailwind CSS'],
       challenges:
-        'Creating a scalable job filtering system and managing user submissions securely.',
+        'Handling dynamic state updates and syncing data between components and localStorage.',
       learnings:
-        'Enhanced understanding of Next.js routing, MongoDB schema design, and building full-stack applications.',
+        'Improved skills in React state management, hooks, and localStorage integration.',
     },
-  }
+  },
+ 
 ];
 
 
