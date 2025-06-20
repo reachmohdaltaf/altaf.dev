@@ -133,38 +133,38 @@ const Home = () => {
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {projects.map((project) => (
-              <Card key={project.id}>
-                <CardContent>
-                  <div className="flex flex-col gap-1">
-                    <p className="text-sm">{project.year}</p>
-                    <Link
-                      to={project.articleLink}
-                      className="text-primary-foreground font-semibold hover:underline"
-                    >
-                      {project.title}
-                    </Link>
-                    <p className="card description">{project.description}</p>
-                  </div>
-                  <div className="flex gap-4 mt-4">
-                    <Link to={project.articleLink}>
-                      <Button size="sm" variant="secondary">
-                        Article
-                      </Button>
-                    </Link>
-                    <a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Button size="sm" variant="secondary">
-                        Demo
-                      </Button>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+           {projects.map((project) => (
+  <Card key={project.id}>
+    <CardContent>
+      <div className="flex flex-col gap-1">
+        <p className="text-sm">{project.year}</p>
+        <Link
+          to={`/projects/${project.id}`} // Update this line to use the project ID
+          className="text-primary-foreground font-semibold hover:underline"
+        >
+          {project.title}
+        </Link>
+        <p className="card description">{project.description}</p>
+      </div>
+      <div className="flex gap-4 mt-4">
+        <Link to={`/projects/${project.id}`}> {/* Update this line too */}
+          <Button size="sm" variant="secondary">
+            Article
+          </Button>
+        </Link>
+        <a
+          href={project.demoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button size="sm" variant="secondary">
+            Demo
+          </Button>
+        </a>
+      </div>
+    </CardContent>
+  </Card>
+))}
           </div>
         </div>
       </section>
