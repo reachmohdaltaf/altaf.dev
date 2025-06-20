@@ -221,7 +221,7 @@ export const projects = [
     title: 'Invozo - Bill Maker',
     description: 'Generate and manage bills effortlessly.',
     articleLink: '/projects/invozo',
-    demoLink: 'https://example.com/demo-invozo',
+    demoLink: 'https://invozo-pges.vercel.app/',
     article: {
       overview:
         'Invozo is a simple yet powerful bill-making web app that allows users to generate professional invoices quickly and easily. Designed with small businesses and freelancers in mind, it focuses on speed, clarity, and ease of use.',
