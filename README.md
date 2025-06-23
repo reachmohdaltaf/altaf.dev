@@ -1,12 +1,38 @@
-# React + Vite
+# 🌐 Mohd Altaf - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! I'm **Mohd Altaf**, a passionate web developer focused on building modern, responsive, and accessible websites and web applications. This repository contains the source code of my personal portfolio built to showcase my skills, projects, and contact details.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Check out the live version of my portfolio here:  
+🔗 [https://altaf-portfolio-omega.vercel.app/](https://altaf-portfolio-omega.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+This project is built using:
+
+- **HTML5**  
+- **CSS3**  
+- **JavaScript**  
+- **React** *(if applicable)*  
+- **Tailwind CSS** *(if used)*  
+- **Vite / CRA** *(choose your build tool)*
+
+---
+
+## 📁 Features
+
+- Responsive design for all devices 📱💻  
+- Smooth navigation and clean layout  
+- Highlighted projects with images and links  
+- Downloadable resume  
+- Social media links and contact form  
+
+---
+
+## 📂 Folder Structure
+
